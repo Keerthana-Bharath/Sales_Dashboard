@@ -85,7 +85,7 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 
 # Key Findings:
 
-1. Overall Sales Performance
+# 1. Overall Sales Performance
 
 * The retail dataset contains **50,000 customer orders** recorded between **01 January 2021 and 31 December 2023**.
 * The business generated a **total revenue of $718,119,957** during the analysis period.
@@ -137,10 +137,10 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 
 Using **RFM Analysis** and **K-Means Clustering**, customers were divided into four meaningful segments:
 
--> Loyal Customers - Largest customer group with consistent purchasing behaviour.                     
--> Regular Customers - Stable customers with moderate purchase frequency and revenue contribution.      
--> Champions - High-value customers with excellent purchase frequency and the highest spending.  
--> At-Risk Customers - Customers with low recent activity who may require retention strategies.       
+* Loyal Customers - Largest customer group with consistent purchasing behaviour.                     
+* Regular Customers - Stable customers with moderate purchase frequency and revenue contribution.      
+* Champions - High-value customers with excellent purchase frequency and the highest spending.  
+* At-Risk Customers - Customers with low recent activity who may require retention strategies.       
 
 **Observation:**
 
