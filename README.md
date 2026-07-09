@@ -32,7 +32,6 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 
 ## Data Dictionary:
 
-=======
 | Column       | Description             |
 | ------------ | ----------------------- |
 | OrderID      | Unique order identifier |
