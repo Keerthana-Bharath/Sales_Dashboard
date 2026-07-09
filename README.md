@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sales Dashboard using Streamlit
 
 Features:
@@ -17,7 +16,6 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 
 # Features:
 
->>>>>>> b7a405bcd5f320094e48bba358712662e71746ed
 - Sidebar filters (Region, Category, Date Range)
 - KPI Cards
 - Monthly Revenue Trend
@@ -27,7 +25,7 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 - Built with Streamlit and Pandas
 
 Tech Stack:
-=======
+
 - EDA
 - Interactive Plotly Charts
 - Customer Segmentation
@@ -35,18 +33,17 @@ Tech Stack:
 - Download CSV
 - Built with Streamlit and Pandas
 
+
 # Tech Stack:
 
->>>>>>> b7a405bcd5f320094e48bba358712662e71746ed
 - Python
 - Streamlit
 - Pandas
 - Plotly
-<<<<<<< HEAD
-=======
 
 # Data Dictionary:
 
+=======
 | Column       | Description             |
 | ------------ | ----------------------- |
 | OrderID      | Unique order identifier |
@@ -64,8 +61,6 @@ Tech Stack:
 | Segment      | Customer segment        ||
 
 # Architecture Diagram:
-
-## 🏗️ Architecture Diagram
 
 ```text
                      Retail Sales Dataset
