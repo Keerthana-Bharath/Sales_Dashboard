@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-# Sales Dashboard using Streamlit
-
-Features:
-=======
 # Sales_Dashboard
 
 An interactive business intelligence dashboard developed using Streamlit to analyze retail sales data. The dashboard provides real-time insights through dynamic filters, KPI cards, interactive visualizations, customer segmentation, exploratory data analysis (EDA), and sales forecasting.
 
-# Project Overview:
+## Project Overview:
 
 - Retail sales analytics dashboard built using Streamlit.
 - Interactive visualizations.
@@ -15,33 +10,27 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 - Time-series forecasting using Holt–Winters.
 - Data filtering and CSV export.
 
-# Features:
+## Features:
 
+- EDA
 - Sidebar filters (Region, Category, Date Range)
 - KPI Cards
 - Monthly Revenue Trend
 - Top 10 Products
-- Interactive Plotly Charts
-- Built with Streamlit and Pandas
-
-Tech Stack:
-
-- EDA
 - Interactive Plotly Charts
 - Customer Segmentation
 - Forecasting
 - Download CSV
 - Built with Streamlit and Pandas
 
-
-# Tech Stack:
+## Tech Stack:
 
 - Python
 - Streamlit
 - Pandas
 - Plotly
 
-# Data Dictionary:
+## Data Dictionary:
 
 =======
 | Column       | Description             |
@@ -60,7 +49,7 @@ Tech Stack:
 | Cluster      | K-Means cluster         |
 | Segment      | Customer segment        ||
 
-# Architecture Diagram:
+## Architecture Diagram:
 
 ```text
                      Retail Sales Dataset
@@ -93,9 +82,9 @@ Tech Stack:
                   Streamlit Web Dashboard
 ```
 
-# Key Findings:
+## Key Findings:
 
-# 1. Overall Sales Performance
+### 1. Overall Sales Performance
 
 * The retail dataset contains **50,000 customer orders** recorded between **01 January 2021 and 31 December 2023**.
 * The business generated a **total revenue of $718,119,957** during the analysis period.
@@ -103,14 +92,14 @@ Tech Stack:
 
 ---
 
-# 2. Regional Performance
+### 2. Regional Performance
 
 * The **East region** generated the highest overall revenue among all sales regions.
 * This suggests that the East region contributed the largest share of the company's total sales and represents the strongest performing market.
 
 ---
 
-# 3. Monthly Revenue Trend
+### 3. Monthly Revenue Trend
 
 * Revenue fluctuated throughout the three-year period, indicating seasonal and business-cycle variations.
 * The **highest monthly revenue** was recorded in **May 2021**.
@@ -119,7 +108,7 @@ Tech Stack:
 
 ---
 
-# 4. Product Performance
+### 4. Product Performance
 
 * Sports equipment products such as **Cricket Bat**, **Basketball**, **Football**, **Volleyball**, and **Tennis Racket** generated the highest revenue.
 * The **Cricket Bat** was the highest revenue-generating product.
@@ -127,7 +116,7 @@ Tech Stack:
 
 ---
 
-# 5. Revenue Distribution
+### 5. Revenue Distribution
 
 * The revenue distribution is **positively (right) skewed**.
 * Most customer orders generated relatively low to moderate revenue, while a smaller number of orders contributed exceptionally high revenue.
@@ -135,7 +124,7 @@ Tech Stack:
 
 ---
 
-# 6. Outlier Analysis
+### 6. Outlier Analysis
 
 * The box plot identified **332 revenue outliers** using the Interquartile Range (IQR) method.
 * These outliers likely correspond to bulk purchases or premium-value orders rather than data quality issues.
@@ -143,7 +132,7 @@ Tech Stack:
 
 ---
 
-# 7. Customer Segmentation
+### 7. Customer Segmentation
 
 Using **RFM Analysis** and **K-Means Clustering**, customers were divided into four meaningful segments:
 
@@ -160,7 +149,7 @@ Using **RFM Analysis** and **K-Means Clustering**, customers were divided into f
 
 ---
 
-# 8. Sales Forecast
+### 8. Sales Forecast
 
 The Holt–Winters forecasting model predicts the following revenue for the next three months:
 
@@ -178,11 +167,11 @@ The forecast indicates:
 
 ---
 
-# Overall Conclusion
+## Overall Conclusion
 
 The dashboard demonstrates that the business maintained **strong and consistent sales performance** over the three-year period, generating more than **$718 million** in revenue. The **East region** emerged as the top-performing market, while sports-related products contributed the highest sales. Customer segmentation revealed a large base of **Loyal Customers** alongside a valuable **Champions** segment, highlighting opportunities for customer retention and targeted marketing. Revenue forecasting suggests that sales are expected to remain stable during the first quarter of 2024, providing confidence for future planning and inventory management.
 
 
-# 🚀 Live Demo:
+## 🚀 Live Demo:
 
 Streamlit App: https://sales-dashboard-keerthana-bharath.streamlit.app
