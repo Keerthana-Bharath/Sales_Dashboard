@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sales Dashboard using Streamlit
 
 Features:
@@ -20,7 +21,6 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 - KPI Cards
 - Monthly Revenue Trend
 - Top 10 Products
-<<<<<<< HEAD
 - Interactive Plotly Charts
 - Built with Streamlit and Pandas
 
@@ -186,4 +186,3 @@ The dashboard demonstrates that the business maintained **strong and consistent 
 # 🚀 Live Demo:
 
 Streamlit App: https://sales-dashboard-keerthana-bharath.streamlit.app
->>>>>>> b7a405bcd5f320094e48bba358712662e71746ed
