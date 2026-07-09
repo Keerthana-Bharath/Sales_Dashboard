@@ -46,8 +46,7 @@ __________________________________________
 | Revenue      | Qty × UnitPrice         |
 | Discount     | Discount (%)            |
 | Cluster      | K-Means cluster         |
-| Segment      | Customer segment        |
-|______________|_________________________|
+| Segment      | Customer segment        ||
 
 # Architecture Diagram:
 
@@ -166,7 +165,6 @@ _____________________________________
 | January 2024  | **$20.24 Million** |
 | February 2024 | **$18.26 Million** |
 | March 2024    | **$19.91 Million** |
-|_______________|____________________|
 
 The forecast indicates:
 
