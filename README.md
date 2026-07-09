@@ -166,7 +166,7 @@ The forecast indicates:
 
 ---
 
-## Overall Conclusion
+## Overall Conclusion:
 
 The dashboard demonstrates that the business maintained **strong and consistent sales performance** over the three-year period, generating more than **$718 million** in revenue. The **East region** emerged as the top-performing market, while sports-related products contributed the highest sales. Customer segmentation revealed a large base of **Loyal Customers** alongside a valuable **Champions** segment, highlighting opportunities for customer retention and targeted marketing. Revenue forecasting suggests that sales are expected to remain stable during the first quarter of 2024, providing confidence for future planning and inventory management.
 
