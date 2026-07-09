@@ -31,7 +31,7 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 - Plotly
 
 # Data Dictionary:
-__________________________________________
+
 | Column       | Description             |
 | ------------ | ----------------------- |
 | OrderID      | Unique order identifier |
@@ -159,7 +159,6 @@ Using **RFM Analysis** and **K-Means Clustering**, customers were divided into f
 
 The Holt–Winters forecasting model predicts the following revenue for the next three months:
 
-_____________________________________
 | Month         |   Forecast Revenue |
 | ------------- | -----------------: |
 | January 2024  | **$20.24 Million** |
