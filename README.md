@@ -50,43 +50,38 @@ An interactive business intelligence dashboard developed using Streamlit to anal
 
 # Architecture Diagram:
 
-                            Retail Sales Dataset
-                         (merged_master.csv)
-                                   │
-                                   ▼
-                      Data Loading (Pandas)
-                                   │
-                                   ▼
-                Data Preprocessing & Cleaning
-        (Date Conversion, Missing Values, Filtering)
-                                   │
-                                   ▼
-                   Interactive Sidebar Filters
-           (Region, Category, Date Range Selection)
-                                   │
-            ┌──────────────────────┼──────────────────────┐
-            │                      │                      │
-            ▼                      ▼                      ▼
-      KPI Calculations      Exploratory Data      Customer Analytics
- (Revenue, Orders, AOV,     Analysis (EDA)       (RFM + K-Means)
-    Top Region)             Histogram, Box Plot,
-                             Outlier Detection
-            │                      │                      │
-            └──────────────────────┼──────────────────────┘
-                                   │
-                                   ▼
-                    Time Series Forecasting
-             (Monthly Revenue + Holt-Winters Model)
-                                   │
-                                   ▼
-                     Interactive Plotly Charts
-      (Line Chart, Bar Chart, Scatter Plot, Pie Chart)
-                                   │
-                                   ▼
-                      CSV Download & Data Preview
-                                   │
-                                   ▼
-                    Streamlit Web Dashboard
+## 🏗️ Architecture Diagram
+
+```text
+                     Retail Sales Dataset
+                     (merged_master.csv)
+                              │
+                              ▼
+                  Data Loading (Pandas)
+                              │
+                              ▼
+              Data Preprocessing & Cleaning
+                              │
+                              ▼
+                Interactive Sidebar Filters
+          (Region • Category • Date Range)
+                              │
+        ┌─────────────┬─────────────┬─────────────┐
+        ▼             ▼             ▼             ▼
+      KPI Cards      EDA      Customer Segments  Forecast
+                     │          (RFM + K-Means) Holt-Winters
+        └─────────────┴─────────────┴─────────────┘
+                              │
+                              ▼
+               Interactive Plotly Visualizations
+                              │
+                 ┌────────────┴────────────┐
+                 ▼                         ▼
+        Download Filtered CSV      Data Preview
+                              │
+                              ▼
+                  Streamlit Web Dashboard
+```
 
 # Key Findings:
 
