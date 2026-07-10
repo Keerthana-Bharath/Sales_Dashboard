@@ -305,7 +305,7 @@ with tab2:
 
         text_auto=".2s",
 
-        title="Top 10 Products by Revenue"
+        title="Top 10 Products by Revenue",
 
     )
 
@@ -357,7 +357,7 @@ with tab3:
     
         filtered,
         
-        x=metric,
+        x=metric, #metric is usually a variable containing the column name.
         
         nbins=30,
         
@@ -484,6 +484,17 @@ with tab4:
     # RFM Scatter
     # -----------------------------
 
+    segment_colors = {
+    
+    "Champions": "gold",
+    
+    "Loyal Customers": "midnightblue",
+    
+    "Regular Customers": "skyblue",
+    
+    "At-Risk Customers": "red"
+    }
+
     fig = px.scatter(
 
         rfm,
@@ -498,8 +509,19 @@ with tab4:
 
         hover_data=["CustomerID","Recency"],
 
+        color_discrete_map=segment_colors,
+
         title="Customer Segments"
 
+    )
+
+    fig.update_traces(
+    marker=dict(
+        line=dict(
+            color="white",
+            width=1
+            )
+        )
     )
 
     st.plotly_chart(
@@ -555,6 +577,7 @@ with tab4:
     #-----------------------
     #Add Customer Count Bar Chart
     #-----------------------
+    
     st.subheader("Customer Count by Segment")
 
     count = (
@@ -576,41 +599,121 @@ with tab4:
     ]
 
     fig2 = px.bar(
-
-        count,
-
-        x="Segment",
-
-        y="Customers",
-
-        color="Segment",
-
-        text="Customers"
-
+    
+    count,
+    
+    x="Segment",
+    
+    y="Customers",
+    
+    color="Segment",
+    
+    text="Customers",
+    
+    color_discrete_map=segment_colors
+    
+    )
+    
+    fig2.update_traces(
+    
+    marker=dict(
+    
+        line=dict(
+        
+            color="white",
+            
+            width=1
+            )
+        )
     )
 
-    st.plotly_chart(
-
-        fig2,
-
-        use_container_width=True
-
+    st.plotly_chart(fig2, use_container_width=True)
+    
+    #----------------------- 
+    #Bar Chart 2: Revenue by Segment
+    #----------------------- 
+    revenue = (
+    
+        rfm.groupby("Segment")
+        
+        .agg(Revenue=("Monetary", "sum"))
+        
+        .reset_index()
     )
+
+    fig_revenue = px.bar(
+    
+    revenue,
+    
+    x="Segment",
+    
+    y="Revenue",
+    
+    color="Segment",
+    
+    text="Revenue",
+    
+    title="Revenue by Customer Segment",
+    
+    color_discrete_map=segment_colors
+    )
+
+    fig_revenue.update_traces(textposition="outside")
+
+    fig_revenue.update_traces(
+    
+    marker=dict(
+    
+        line=dict(
+        
+            color="white",
+            
+            width=1
+            )
+        )
+    )
+
+    st.plotly_chart(fig_revenue, use_container_width=True)
     #-----------------------
     #Segment Distribution Pie Chart
     #-----------------------
     
     fig3 = px.pie(
-    count,
-    names="Segment",
-    values="Customers",
-    title="Customer Segment Distribution"
+        
+        count,
+        
+        names="Segment",
+        
+        values="Customers",
+
+        color="Segment",
+        
+        title="Customer Segment Distribution",
+
+        color_discrete_map=segment_colors
+    )
+
+    fig3.update_traces(
+    
+    marker=dict(
+    
+        line=dict(
+        
+            color="white",
+            
+            width=1
+            
+            )
+        )
     )
 
     st.plotly_chart(
-        fig3,
-        use_container_width=True
-        )
+        
+            fig3,
+        
+            use_container_width=True
+    )
+ 
 # ---------------------------------------------------
 # Tab 5 : Forecast
 # ---------------------------------------------------
